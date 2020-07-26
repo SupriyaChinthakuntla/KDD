@@ -1,75 +1,71 @@
-**Team Members:**
+## Team Members: 
+Sai Supriya Chinthakuntla
+Philip Thomas
+Ganesh Vishwanathan 
+Sucharita Mullapudi
+Hailey Brown
 
-1.  Sai Supriya Chinthakuntla
-    
-2.  Philip Thomas
-    
-3.  Ganesh Vishwanathan
-    
-4.  Sucharita Mullapudi
-    
-5.  Hailey Brown
-    
-
-**Project Introduction:**
-
+# Project Introduction: 
 CoronaVirus is an illness caused by a virus. Symptoms of this virus vary from mild to moderate respiratory illness. The virus is called COVID-19 and has spread from person to person. Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness. At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. Pandemic is spreading all over the world and it’s very important to understand about the spread.
-
 In this project, we are going to analyze accumulated data of confirmed deaths and recovered cases.
 
-**Data Sources:**
-
-Link to the dataset: [https://github.com/CSSEGISandData/COVID-19](https://github.com/CSSEGISandData/COVID-19)
-
+# Data Sources:
+Link to the dataset: https://github.com/CSSEGISandData/COVID-19
 This is the data repository for the 2019 Novel Coronavirus Visual Dashboard operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). Also, Supported by ESRI Living Atlas Team and the Johns Hopkins University Applied Physics Lab (JHU APL)
 
-**Dataset:**
+# Dataset:
+time_series_covid19_confirmed_global.csv (Link Raw File)
+time_series_covid19_deaths_global (Link Raw File)
+Global Data (Link ) 
+Technologies Used:
+python
+pandas, jupyter
+Matplotlib
+Numpy
+Scikit-learn 
 
--   time_series_covid19_confirmed_global.csv ([Link Raw File](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv))
-    
--   time_series_covid19_deaths_global ([Link Raw File](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv))
-    
--   cases_country.csv ([Link Raw File](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/web-data/data/cases_country.csv))
-    
+# Research Question: 
+Going to predict the death rate of one country for the next week based on the available data.
 
-**Technologies Used:**
+# Relevant Domain Information:
+https://www.weforum.org/agenda/2020/05/model-double-u-s-covid-19-death-forecast-restrictions/
+https://www.nytimes.com/2020/05/04/us/coronavirus-live-updates.html
+https://fox6now.com/2020/06/24/new-cdc-model-predicts-up-to-150000-american-covid-19-deaths-by-mid-july/
+https://www.usnews.com/news/national-news/articles/2020-07-23/us-surpasses-4-million-coronavirus-cases-as-cdc-predicts-164-000-deaths-by-mid-august 
 
--   python
-    
--   pandas, jupyter
-    
--   pycountry_convert
-    
--   Matplotlib
-    
--   keras
-    
--   Plotly
-    
--   Numpy
-    
+# Approach :
+# Data understanding and EDA:
 
-**Downloading Prerequisites:**
+We collected and cleaned the Global Data set on COVID-19 data.  
+Below are the basic EDA on Data set
+# Visualization of Top 10 Countries Confirmed COVID cases
 
--   pip install pycountry_convert
-    
--   pip install folium
-    
 
-**Research Question:**
+# Visualization of Top 10 Countries Active COVID cases
+ 
 
-Relevant Domain Information (links to three or more articles that relate to your research question)
+# Visualization of Top 10 Countries Death Count COVID cases
+ 
+  
+                       
+# Date Preparation: 
+# Handling Missing Values:
 
-**Approach :**
+Dataset1:(Confirmed_cases)
+Original dataset has Province/State column as it is not required for further analysis; we have removed that column.
 
-Data understanding and EDA:
+Dataset2:(Death_cases)
+Original dataset has Province/State column as it is not required for further analysis; we have removed that column.
 
-**Date Preparation:**
+Dataset3:(Global_Death)
+Original dataset has People_Tested,People_Hospitalized,UID,ISO3 and Mortality_Rate columns as it is not required for further analysis; we have removed that column.
+Original dataset has some missing values in Lat,Long_ and Recovered which will be handled using fillna and if else looping techniques.
 
-Machine Learning (if applicable - supervised, unsupervised)
+# Machine Learning: 
+We are assuming we can use Supervised Learning and Linear Regression techniques to predict the model. 
 
-**Evaluation**
-
-Known Issues (problems with predictors, reporting, bias, etc.) - this will develop over time
-
-**`Conclusion`**
+# Evaluation: In Progress
+ 
+# Known Issues (problems with predictors, reporting, bias, etc.) - this will develop over time : Will update further
+ 
+# Conclusion: Not yet concluded
