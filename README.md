@@ -68,8 +68,11 @@ Original dataset has some missing values in Lat,Long_ and Recovered which will b
 # Machine Learning: 
 We are assuming we can use Supervised Learning and Linear Regression techniques to predict the model. 
 
-# Evaluation: In Progress
+# Evaluation: 
+In Progress
  
-# Known Issues (problems with predictors, reporting, bias, etc.) - this will develop over time : Will update further
+# Known Issues
+(problems with predictors, reporting, bias, etc.) - this will develop over time : Will update further
  
-# Conclusion: Not yet concluded
+# Conclusion: 
+Not yet concluded
