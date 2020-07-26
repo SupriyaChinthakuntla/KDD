@@ -66,7 +66,7 @@ Below are the basic EDA on Data set
 
 # Visualization of Top 10 Countries Death Count COVID cases
  
-![alt text](/Images/death_rate.png "Images")  
+![alt text](/Images/death_rate.PNG "Images")  
                        
 # Date Preparation: 
 # Handling Missing Values:
