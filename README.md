@@ -1,9 +1,13 @@
 ## Team Members: 
-Sai Supriya Chinthakuntla
-Philip Thomas
-Ganesh Vishwanathan 
-Sucharita Mullapudi
-Hailey Brown
+1. Sai Supriya Chinthakuntla
+
+2. Philip Thomas
+
+3. Ganesh Vishwanathan 
+
+4. Sucharita Mullapudi
+
+5. Hailey Brown
 
 # Project Introduction: 
 CoronaVirus is an illness caused by a virus. Symptoms of this virus vary from mild to moderate respiratory illness. The virus is called COVID-19 and has spread from person to person. Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness. At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. Pandemic is spreading all over the world and it’s very important to understand about the spread.
