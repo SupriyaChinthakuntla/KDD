@@ -27,12 +27,17 @@ https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_d
 Global Data
 https://raw.githubusercontent.com/CSSEGISandData/COVID-19/web-data/data/cases_country.csv
 
-Technologies Used:
-python
-pandas, jupyter
-Matplotlib
-Numpy
-Scikit-learn 
+# Technologies Used:
+
+1)python
+
+2)pandas, jupyter
+
+3)Matplotlib
+
+4)Numpy
+
+5)Scikit-learn 
 
 # Research Question: 
 Going to predict the death rate of one country for the next week based on the available data.
@@ -53,13 +58,15 @@ We collected and cleaned the Global Data set on COVID-19 data.
 Below are the basic EDA on Data set
 # Visualization of Top 10 Countries Confirmed COVID cases
 
+![alt text](/images/Confirm.png "Screenshot") 
 
 # Visualization of Top 10 Countries Active COVID cases
- 
+
+![alt text](/images/Active.png "Screenshot")  
 
 # Visualization of Top 10 Countries Death Count COVID cases
  
-  
+![alt text](/images/death_rate.png "Screenshot")  
                        
 # Date Preparation: 
 # Handling Missing Values:
