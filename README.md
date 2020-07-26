@@ -18,9 +18,15 @@ Link to the dataset: https://github.com/CSSEGISandData/COVID-19
 This is the data repository for the 2019 Novel Coronavirus Visual Dashboard operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). Also, Supported by ESRI Living Atlas Team and the Johns Hopkins University Applied Physics Lab (JHU APL)
 
 # Dataset:
-time_series_covid19_confirmed_global.csv (Link Raw File)
-time_series_covid19_deaths_global (Link Raw File)
-Global Data (Link ) 
+time_series_covid19_confirmed_global.csv
+https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv
+
+time_series_covid19_deaths_global
+https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv
+
+Global Data
+https://raw.githubusercontent.com/CSSEGISandData/COVID-19/web-data/data/cases_country.csv
+
 Technologies Used:
 python
 pandas, jupyter
@@ -33,8 +39,11 @@ Going to predict the death rate of one country for the next week based on the av
 
 # Relevant Domain Information:
 https://www.weforum.org/agenda/2020/05/model-double-u-s-covid-19-death-forecast-restrictions/
+
 https://www.nytimes.com/2020/05/04/us/coronavirus-live-updates.html
+
 https://fox6now.com/2020/06/24/new-cdc-model-predicts-up-to-150000-american-covid-19-deaths-by-mid-july/
+
 https://www.usnews.com/news/national-news/articles/2020-07-23/us-surpasses-4-million-coronavirus-cases-as-cdc-predicts-164-000-deaths-by-mid-august 
 
 # Approach :
