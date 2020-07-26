@@ -58,15 +58,15 @@ We collected and cleaned the Global Data set on COVID-19 data.
 Below are the basic EDA on Data set
 # Visualization of Top 10 Countries Confirmed COVID cases
 
-![alt text](/images/Confirm.png "Screenshot") 
+![alt text](/images/Confirm.png) 
 
 # Visualization of Top 10 Countries Active COVID cases
 
-![alt text](/images/Active.png "Screenshot")  
+![alt text](/images/Active.png)  
 
 # Visualization of Top 10 Countries Death Count COVID cases
  
-![alt text](/images/death_rate.png "Screenshot")  
+![alt text](/images/death_rate.png)  
                        
 # Date Preparation: 
 # Handling Missing Values:
