@@ -29,7 +29,7 @@ This is the data repository for the 2019 Novel Coronavirus Visual Dashboard oper
     
 -   time_series_covid19_deaths_global ([Link Raw File](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv))
     
--   cases_country.csv (Link Raw File)
+-   cases_country.csv ([Link Raw File](https://www.kaggle.com/yaninahusarevych/comments?select=cases_country.csv))
     
 
 **Technologies Used:**
