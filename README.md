@@ -40,7 +40,8 @@ https://raw.githubusercontent.com/CSSEGISandData/COVID-19/web-data/data/cases_co
 5)Scikit-learn 
 
 # Research Question: 
-Going to predict the death rate of one country for the next week based on the available data.
+Based on the available data is it possible to predict the death rate of a selected country for the next week?
+
 
 # Relevant Domain Information:
 https://www.weforum.org/agenda/2020/05/model-double-u-s-covid-19-death-forecast-restrictions/
@@ -69,7 +70,7 @@ Below are the basic EDA on Data set
 ![alt text](/Images/death_rate.PNG "Images")  
                        
 # Date Preparation: 
-# Handling Missing Values:
+## Handling Missing Values:
 
 Dataset1:(Confirmed_cases)
 Original dataset has Province/State column as it is not required for further analysis; we have removed that column.
