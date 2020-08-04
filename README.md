@@ -13,34 +13,39 @@
 CoronaVirus is an illness caused by a virus. Symptoms of this virus vary from mild to moderate respiratory illness. The virus is called COVID-19 and has spread from person to person. Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness. At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. Pandemic is spreading all over the world and it’s very important to understand about the spread.
 In this project, we are going to analyze accumulated data of confirmed deaths and recovered cases.
 
-# Data Sources:
-Link to the dataset: https://github.com/CSSEGISandData/COVID-19
-This is the data repository for the 2019 Novel Coronavirus Visual Dashboard operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). Also, Supported by ESRI Living Atlas Team and the Johns Hopkins University Applied Physics Lab (JHU APL)
+# Data Sources and Datasets:
+Link to the live API: https://www.trackcorona.live/api in which data is updated for every 20mins.
+Link to the county level dataset of USA : https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv
 
-# Dataset:
-time_series_covid19_confirmed_global.csv
-https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv
-
-time_series_covid19_deaths_global
-https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv
-
-Global Data
-https://raw.githubusercontent.com/CSSEGISandData/COVID-19/web-data/data/cases_country.csv
 
 # Technologies Used:
 
-1)python
+1)Python (Programming Language)
 
-2)pandas, jupyter
+2)Jupyter Notebook(IDE)
 
-3)Matplotlib
+3)Libraries used in python :
 
-4)Numpy
+a)Pandas
 
-5)Scikit-learn 
+b)Matplotlib
+
+c)Numpy
+
+d)Scikit-learn 
+
+e)seaborn
+
+f)sklearn
+
+g)json
+
+h)requests
+
+i)statsmodels
 
 # Research Question: 
-Based on the available data is it possible to predict the death rate of a selected country for the next week?
+What is the ability to predict the count of future active cases and the number of reported cases in particular location, based on address provided in the USA?
 
 
 # Relevant Domain Information:
@@ -53,10 +58,24 @@ https://fox6now.com/2020/06/24/new-cdc-model-predicts-up-to-150000-american-covi
 https://www.usnews.com/news/national-news/articles/2020-07-23/us-surpasses-4-million-coronavirus-cases-as-cdc-predicts-164-000-deaths-by-mid-august 
 
 # Approach :
+
+# Methods Used:
+
+1)Exploratory Data Analysis
+2)Data Preprocessing
+3)Machine Learning
+4)Predictive Modeling
+5)Linear regression
+6)KNeighborsRegression
+7)ARIMA Model
+
 # Data understanding and EDA:
 
-We collected and cleaned the Global Data set on COVID-19 data.  
-Below are the basic EDA on Data set
+We collected and cleaned a live global dataset of COVID19.
+Visualization of confirmed, dead and  recovered cases all over the world as of today. Using live API for today’s dataset.
+Also based on the address given we bin the location into Red, Yellow and green zones. This can be specifically helpful for people to understand their level of isolation required to be safe.
+Performing a heat map to find the correlation between various columns here we find active and dead are related to recovered which makes logical sense.
+
 # Visualization of Top 10 Countries Confirmed COVID cases
 
 ![alt text](/Images/Confim.PNG "Images") 
