@@ -150,7 +150,9 @@ Then again, Mecklenburg county is the top county in North Carolina for covid rel
  
 ![alt text](/Images/Images/death-N.PNG "Images")  
 
-## Below is the graph plotted for North Carolina state prediction of Covid cases.
+## Linear Regression graph:
+
+Below is the graph plotted for North Carolina state prediction of Covid cases.
 
 ![alt text](/Images/Images/scatter_init.PNG "Images")  
 
@@ -171,11 +173,14 @@ We have taken p,d,q values from the autocorrelation and partial autocorrelation 
 
 ## Handling Missing Values:
 
-Covid Live API Dataset: 
-Original dataset has some missing values in Lat,Long_ and Recovered which will be handled using fillna.
+Covid Live API Dataset: Checked for null values and replaced with 0 for columns dead and recovered using fillna method.
 
-County And State COVID Dataset:  
-Checked for null values and replaced with 0 for fips column.
+County And State COVID Dataset:  Checked for null values and replaced with 0 for fips column.
+
+Original dataset has some missing values in Lat,Long_ and Recovered which will be handled using fillna and if else looping techniques.
+Converted date column from string to datetime column. 
+In the dataset we have a cumulative sum for deaths and cases column. We transformed each row to its individual value.
+
 
 
 # Machine Learning:
