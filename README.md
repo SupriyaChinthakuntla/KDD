@@ -46,9 +46,33 @@ Link to the county level dataset of USA : https://raw.githubusercontent.com/nyti
 
      i)statsmodels
 
+# Instructions to use to notebook :
+
+Open the jupyter notebook
+Step 1: Address search is a static field. Enter address of interest here to find covid prediction like below.
+addressSearch = "9309 Kittansett Dr NC 28262"
+Step 2: Now run all the cells and view results at the end which shows covid predictions for the next 10 days based on the address given.
+Step 3: View your predicted results. Below is an result for the given address
+Given address is:  9309 Kittansett Dr NC 28262
+Your state is :  North Carolina
+Todays covid active index based on your location is -  4062.0
+Todays covid deaths index based on your location is -  50.0
+You are in  Red Zone
+The future 10 day active COVID predictions for ur location based on your state trend is: 
+2020-08-02    4062.0
+2020-08-03    3759.0
+2020-08-04    4343.0
+2020-08-05    5481.0
+2020-08-06    5882.0
+2020-08-07    5684.0
+2020-08-08    4628.0
+2020-08-09    3975.0
+2020-08-10    3767.0
+2020-08-11    4548.0
+
 # Research Question: 
 
-Although COVID-19 related data is available at the national, state, county or even city level, people are very interested in knowing what’s happening in their local area, around their neighborhood, the grocery store, the pharmacy, or retail store they typically go to, and whether the place they are thinking of going to is in a hotspot or not. That specific inquiry was the focus of our research and can be summed up in this question: When given a street address can you find the most recent (updated daily) death rate and confirmed cases in the surrounding area, show whether it’s a high risk area, and predict what those values will be for the next 10 days so as to decide whether to go to that specific location? 
+Although COVID-19 related data is available at the national, state, county or even city level, people are very interested in knowing what’s happening in their local area, around their neighborhood, the grocery store, the pharmacy, or retail store they typically go to, and whether the place they are thinking of going to is in a hotspot or not. That specific inquiry was the focus of our research and can be summed up in this question: When given a street address can you find the most recent (updated daily) death rate and confirmed cases in the surrounding area, show whether it’s a high risk area or not, and predict what those values will be for the next 10 days so as to decide whether to go to that specific location or not? 
 
 
 # Relevant Domain Information:
@@ -107,6 +131,8 @@ Showing heat map as green zone if the predicted confirmed cases are less than 55
 Creating a model by using K nearest neighbour algorithm to find the mean covid indexes for a given geographic location.
 
 ![alt text](/Images/Images/KNN.PNG "Images")
+
+We have cleaned the county level dataset by filling the missing values and below are the visualizations based on active and death count with respect to county information:
 
 ## Visualization of Top 10 Counties Active COVID cases in USA
 In the chart below, you can see that New York City is the county with the highest number of active cases, over 200,000. 
