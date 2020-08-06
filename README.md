@@ -27,7 +27,6 @@ Link to the county level dataset of USA : https://raw.githubusercontent.com/nyti
 2)Jupyter Notebook(IDE)
 
 3)Libraries used in python :
-
      a)Pandas
 
      b)Matplotlib
@@ -55,6 +54,7 @@ a)Given a street address can we find out the most recent (near real-time) death 
 
 
 # Relevant Domain Information:
+
 https://www.weforum.org/agenda/2020/05/model-double-u-s-covid-19-death-forecast-restrictions/
 
 https://www.nytimes.com/2020/05/04/us/coronavirus-live-updates.html
@@ -65,14 +65,22 @@ https://www.usnews.com/news/national-news/articles/2020-07-23/us-surpasses-4-mil
 
 # Approach :
 
+Exploratory Data Analysis, Supervised Learning(KNN Model), Time-series Analysis and Prediction(Arima Model)
+
 # Methods Used:
 
 1)Exploratory Data Analysis
+
 2)Data Preprocessing
+
 3)Machine Learning
+
 4)Predictive Modeling
+
 5)Linear regression
+
 6)KNeighborsRegression
+
 7)ARIMA Model
 
 # Data understanding and EDA:
@@ -134,6 +142,7 @@ Below is the plot showing active cases plot in Mecklenburg county in North Carol
 ![alt text](/Images/Images/correlation.PNG "Images")  
                        
 # Date Preparation: 
+
 ## Handling Missing Values:
 
 Covid Live API Dataset: 
@@ -141,7 +150,6 @@ Original dataset has some missing values in Lat,Long_ and Recovered which will b
 
 County And State COVID Dataset:  
 Checked for null values and replaced with 0 for fips column.
-
 
 
 # Machine Learning:
