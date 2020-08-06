@@ -96,6 +96,8 @@ Showing heat map as green zone if the predicted confirmed cases are less than 55
 
 ## The MSE analysis for the model to figure out the perfect number of neighbours to get accurate results:
 
+Creating a model by using K nearest neighbour algorithm to find the mean covid indexes for a given geographic location.
+
 ![alt text](/Images/Images/KNN.PNG "Images")
 
 ## Visualization of Top 10 Counties Active COVID cases in USA
@@ -120,6 +122,8 @@ Then again, Mecklenburg county is the top county in North Carolina for covid rel
 
 ## Plot of balanced dataset :
 
+Below is the plot showing active cases plot in Mecklenburg county in North Carolina.The graph changes accordingly based on the county and state information.
+
 ![alt text](/Images/Images/plot_active.PNG "Images")  
 
 
@@ -130,24 +134,36 @@ Then again, Mecklenburg county is the top county in North Carolina for covid rel
 # Date Preparation: 
 ## Handling Missing Values:
 
-Dataset1:(Confirmed_cases)
-Original dataset has Province/State column as it is not required for further analysis; we have removed that column.
+Covid Live API Dataset: 
+Original dataset has some missing values in Lat,Long_ and Recovered which will be handled using fillna.
 
-Dataset2:(Death_cases)
-Original dataset has Province/State column as it is not required for further analysis; we have removed that column.
+County And State COVID Dataset:  
+Checked for null values and replaced with 0 for fips column.
 
-Dataset3:(Global_Death)
-Original dataset has People_Tested,People_Hospitalized,UID,ISO3 and Mortality_Rate columns as it is not required for further analysis; we have removed that column.
-Original dataset has some missing values in Lat,Long_ and Recovered which will be handled using fillna and if else looping techniques.
 
-# Machine Learning: 
-We are assuming we can use Supervised Learning and Linear Regression techniques to predict the model. 
+
+# Machine Learning:
+
+We used a classification method called K-nearest algorithm to predict the impact of a virus given any Geo location based on its nearest neighbours as covid spreads more on contact and in a localized manner for current date.
+Used Linear Regression technique to predict the death cases based on active cases at county level.Since, data has exponential relationship, linear regression didn’t give accurate results.
+Used Arima Model to predict next 10 days active cases count of the county, the county information was extracted based on the geo location.
+
 
 # Evaluation: 
-In Progress
+
+Picking up the dynamic daily dump of COVID data based on geo location from www.trackcorona.live api and reading it into a data frame. This dataset contains lat, long, recovered, death as columns. 
+Generated heat maps and scatter plots to visualize the relationship between geo location and covid concentration. We found covid high locations are highly clustered. We found covid index at a place based on localized data for the particular geo location.
+Using KNN for predicting covid based on location by zoning the address. 
+Picking up another dataset https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv in which we have county level data.This dataset consists of state name,county name,active (cummulative count),cummulative death count and date as columns.Used diff function and created an active_count column which is used for further analysis.
+Generated autocorrelation and partial autocorrelation plots based on active_count column for the dataset to determine p,d and q for inputs to arima model.
+Used the Arima model to predict the future dates covid-19 active cases based on the county information is taken from the address entered at the begining. 
+
  
 # Known Issues
 (problems with predictors, reporting, bias, etc.) - this will develop over time : Will update further
+
+One main problem that we found was that it is hard to accurately predict for a location based on county level data. If we had more narrowed down data, such as towns/cities or even household data, we could give more accurate results for the prediction. Having county level data made it difficult, because there is a big jump in the number of cases from county to county. For example, Mecklenburg county has over 20,000 cases but Cabarrus county only has a little over 2,000. Though, this is important information, because people travel from county to county or even state to state on a daily basis. 
  
 # Conclusion: 
-Not yet concluded
+
+By performing EDA, we were able to get a better understanding of the datasets that we were working with. We were able to find the relationship between geo location and covid concentrations. Then based on location we were able to take an address and use KNN to predict covid cases. We also did time series predictions, to predict the future active cases at the address of interest, based on the trend in state. By completing all of this, we were able to see that there is a correlation between deaths and confirmed cases. Also, we were able to see what covid cases might be like for the next 10 days based on the location. We found that the number of active cases will continue to increase and decrease for Mecklenburg county. 
