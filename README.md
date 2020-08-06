@@ -27,6 +27,7 @@ Link to the county level dataset of USA : https://raw.githubusercontent.com/nyti
 2)Jupyter Notebook(IDE)
 
 3)Libraries used in python :
+     
      a)Pandas
 
      b)Matplotlib
@@ -47,10 +48,7 @@ Link to the county level dataset of USA : https://raw.githubusercontent.com/nyti
 
 # Research Question: 
 
-Although COVID-19 related data is available at the national, state, county or even city level, people are very interested in knowing what’s happening around their neighborhood, the grocery store, the pharmacy, or retail store they typically go to, and whether the place they are thinking of going to is in a viral hotspot or not.
-That broader query can be broken out into three related questions: 
-
-a)Given a street address can we find out the most recent (near real-time) death rate and confirmed cases in the surrounding area? 
+Although COVID-19 related data is available at the national, state, county or even city level, people are very interested in knowing what’s happening in their local area, around their neighborhood, the grocery store, the pharmacy, or retail store they typically go to, and whether the place they are thinking of going to is in a hotspot or not. That specific inquiry was the focus of our research and can be summed up in this question: When given a street address can you find the most recent (updated daily) death rate and confirmed cases in the surrounding area, show whether it’s a high risk area, and predict what those values will be for the next 10 days so as to decide whether to go to that specific location? 
 
 
 # Relevant Domain Information:
@@ -130,6 +128,10 @@ Then again, Mecklenburg county is the top county in North Carolina for covid rel
  
 ![alt text](/Images/Images/death-N.PNG "Images")  
 
+## Below is the graph plotted for North Carolina state prediction of Covid cases.
+
+![alt text](/Images/Images/linear.PNG "Images")  
+
 ## Plot of balanced dataset :
 
 Below is the plot showing active cases plot in Mecklenburg county in North Carolina.The graph changes accordingly based on the county and state information.
@@ -138,6 +140,8 @@ Below is the plot showing active cases plot in Mecklenburg county in North Carol
 
 
 ## AutoCorrelation and Partial AutoCorrelation plots:
+
+We have taken p,d,q values from the autocorrelation and partial autocorrelation plots below.
 
 ![alt text](/Images/Images/correlation.PNG "Images")  
                        
@@ -154,9 +158,9 @@ Checked for null values and replaced with 0 for fips column.
 
 # Machine Learning:
 
-We used a classification method called K-nearest algorithm to predict the impact of a virus given any Geo location based on its nearest neighbours as covid spreads more on contact and in a localized manner for current date.
-Used Linear Regression technique to predict the death cases based on active cases at county level.Since, data has exponential relationship, linear regression didn’t give accurate results.
-Used Arima Model to predict next 10 days active cases count of the county, the county information was extracted based on the geo location.
+We used a classification method called K-nearest neighbor (KNN) algorithm to predict the impact of a virus given any geographical location based on its nearest neighbours as covid spreads more on contact and in a localized manner for current date. KNN is a classification technique which works when we have a set of data points and we know the correct class labels. We have given a range which varies from 1-50 and k-nearest value is picked randomly. By visualizing the graph MSE vs k-nearest value, we picked k-nearest value as 9 since it has the least MSE and high accuracy.
+Linear regression is a linear approach to find the relationship between a dependent variable and one or more independent variables.Used Linear Regression technique to predict the death cases based on active cases at county level.Since, data has exponential relationship, linear regression didn’t give accurate results.
+We have used Auto Regressive Integrated Moving Average (ARIMA) model which uses time series data to predict future data. Here,we have applied the arima model to our balanced dataset which resulted in future active cases count based on the existing data.We have predicted next 10 days active cases count of the county.The county information was extracted based on the geo location.
 
 
 # Evaluation: 
@@ -169,8 +173,7 @@ Generated autocorrelation and partial autocorrelation plots based on active_coun
 Used the Arima model to predict the future dates covid-19 active cases based on the county information is taken from the address entered at the begining. 
 
  
-# Known Issues
-(problems with predictors, reporting, bias, etc.) - this will develop over time : Will update further
+# Known Issues:
 
 One main problem that we found was that it is hard to accurately predict for a location based on county level data. If we had more narrowed down data, such as towns/cities or even household data, we could give more accurate results for the prediction. Having county level data made it difficult, because there is a big jump in the number of cases from county to county. For example, Mecklenburg county has over 20,000 cases but Cabarrus county only has a little over 2,000. Though, this is important information, because people travel from county to county or even state to state on a daily basis. 
  
