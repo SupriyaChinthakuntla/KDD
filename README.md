@@ -10,10 +10,12 @@
 5. Hailey Brown
 
 # Project Introduction: 
+
 CoronaVirus is an illness caused by a virus. Symptoms of this virus vary from mild to moderate respiratory illness. The virus is called COVID-19 and has spread from person to person. Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness. At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. Pandemic is spreading all over the world and it’s very important to understand about the spread.
 In this project, we are going to analyze accumulated data of confirmed deaths and recovered cases.
 
 # Data Sources and Datasets:
+
 Link to the live API: https://www.trackcorona.live/api in which data is updated for every 20mins.
 Link to the county level dataset of USA : https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv
 
@@ -26,23 +28,23 @@ Link to the county level dataset of USA : https://raw.githubusercontent.com/nyti
 
 3)Libraries used in python :
 
-a)Pandas
+     a)Pandas
 
-b)Matplotlib
+     b)Matplotlib
 
-c)Numpy
+     c)Numpy
 
-d)Scikit-learn 
+     d)Scikit-learn 
 
-e)seaborn
+     e)seaborn
 
-f)sklearn
+     f)sklearn
 
-g)json
+     g)json
 
-h)requests
+     h)requests
 
-i)statsmodels
+     i)statsmodels
 
 # Research Question: 
 
