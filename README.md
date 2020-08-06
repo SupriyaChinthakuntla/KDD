@@ -106,7 +106,7 @@ In the state of North Carolina, Mecklenburg county is the worst county for the n
 ## Visualization of Top 10 Countries Death cases of COVID in North Carolina:
 Then again, Mecklenburg county is the top county in North Carolina for covid related death count. We saw before that death count and confirmed cases are correlated. These two graphs of active cases and death count, show this as well. 
  
-![alt text](/Images/Images/death_N.PNG "Images")  
+![alt text](/Images/Images/death-N.PNG "Images")  
 
 ## Plot of balanced dataset :
 
