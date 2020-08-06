@@ -76,17 +76,46 @@ Visualization of confirmed, dead and  recovered cases all over the world as of t
 Also based on the address given we bin the location into Red, Yellow and green zones. This can be specifically helpful for people to understand their level of isolation required to be safe.
 Performing a heat map to find the correlation between various columns here we find active and dead are related to recovered which makes logical sense.
 
-# Visualization of Top 10 Countries Confirmed COVID cases
+![alt text](/Images/Images/heatmap.PNG "Images") 
 
-![alt text](/Images/Confim.PNG "Images") 
+![alt text](/Images/Images/scatter.PNG "Images") 
 
-# Visualization of Top 10 Countries Active COVID cases
+![alt text](/Images/Images/scatter1.PNG "Images") 
 
-![alt text](/Images/Active.PNG "Images")  
+![alt text](/Images/Images/scatter2.PNG "Images") 
 
-# Visualization of Top 10 Countries Death Count COVID cases
+## The MSE analysis for the model to figure out the perfect number of neighbours to get accurate results:
+
+![alt text](/Images/Images/KNN.PNG "Images")
+
+## Visualization of Top 10 Counties Active COVID cases in USA
+In the chart below, you can see that New York City is the county with the highest number of active cases, over 200,000. 
+
+![alt text](/Images/Images/active1.PNG "Images") 
+
+## Visualization of Top 10 Counties Death cases of COVID in USA
+Once again, New York City is the top county in the United States for the death count. 
+
+![alt text](/Images/Images/death1.PNG "Images")  
+
+## Visualization of Top 10 Counties Active COVID cases in North Carolina:
+In the state of North Carolina, Mecklenburg county is the worst county for the number of active covid cases. Mecklenburg county has a little over 20,000 cases. 
+
+![alt text](/Images/Images/Active-N.PNG "Images")  
+
+## Visualization of Top 10 Countries Death cases of COVID in North Carolina:
+Then again, Mecklenburg county is the top county in North Carolina for covid related death count. We saw before that death count and confirmed cases are correlated. These two graphs of active cases and death count, show this as well. 
  
-![alt text](/Images/death_rate.PNG "Images")  
+![alt text](/Images/Images/death_N.PNG "Images")  
+
+## Plot of balanced dataset :
+
+![alt text](/Images/Images/plot_active.PNG "Images")  
+
+
+## AutoCorrelation and Partial AutoCorrelation plots:
+
+![alt text](/Images/Images/correlation.PNG "Images")  
                        
 # Date Preparation: 
 ## Handling Missing Values:
