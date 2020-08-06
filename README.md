@@ -198,7 +198,30 @@ Used the Arima model to predict the future dates covid-19 active cases based on 
 # Known Issues:
 
 One main problem that we found was that it is hard to accurately predict for a location based on county level data. If we had more narrowed down data, such as towns/cities or even household data, we could give more accurate results for the prediction. Having county level data made it difficult, because there is a big jump in the number of cases from county to county. For example, Mecklenburg county has over 20,000 cases but Cabarrus county only has a little over 2,000. Though, this is important information, because people travel from county to county or even state to state on a daily basis. 
- 
+
+# Enhancements: 
+
+We would like to perform thorough cleanup of data like checking for outliers and removing columns which are not necessary for the model.
+
+->Increase model’s efficiency by training model with more county data.
+
+->Increase model efficiency by tuning the model for better accuracy.
+
+->Finding more appropriate household/granular data for better predictions.
+
+->We would like to create a UI and API for people to access the tool.
+
+
+# Output:
+
+## ARIMA model superimposed on the existing data to check its performance:
+
+![alt text](/Images/Images/check.PNG "Images")  
+
+## Final results of arima model displaying future dates data :
+
+![alt text](/Images/Images/final.PNG "Images")  
+
 # Conclusion: 
 
 By performing EDA, we were able to get a better understanding of the datasets that we were working with. We were able to find the relationship between geo location and covid concentrations. Then based on location we were able to take an address and use KNN to predict covid cases. We also did time series predictions, to predict the future active cases at the address of interest, based on the trend in state. By completing all of this, we were able to see that there is a correlation between deaths and confirmed cases. Also, we were able to see what covid cases might be like for the next 10 days based on the location. We found that the number of active cases will continue to increase and decrease for Mecklenburg county. 
