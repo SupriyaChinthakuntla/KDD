@@ -110,15 +110,15 @@ Performing a heat map to find the correlation between various columns here we fi
 
 ![alt text](/Images/Images/heatmap.PNG "Images") 
 
-Showing heat map as red zone if the predicted confirmed cases are less than 95 per in a day.
+Below scatter plot shows as red zone if the predicted confirmed cases are less than 95 per in a day.
 
 ![alt text](/Images/Images/scatter.PNG "Images") 
 
-Showing heat map as orange zone if the predicted confirmed cases are less than 75 per in a day.
+Below scatter plot shows as orange zone if the predicted confirmed cases are less than 75 per in a day.
 
 ![alt text](/Images/Images/scatter1.PNG "Images") 
 
-Showing heat map as green zone if the predicted confirmed cases are less than 55 per in a day.
+Below scatter plot shows as green zone if the predicted confirmed cases are less than 55 per in a day.
 
 ![alt text](/Images/Images/scatter2.PNG "Images") 
 
