@@ -49,26 +49,22 @@ Link to the county level dataset of USA : https://raw.githubusercontent.com/nyti
 # Instructions to use to notebook :
 
 Open the jupyter notebook
+
 Step 1: Address search is a static field. Enter address of interest here to find covid prediction like below.
 addressSearch = "9309 Kittansett Dr NC 28262"
+
 Step 2: Now run all the cells and view results at the end which shows covid predictions for the next 10 days based on the address given.
+
 Step 3: View your predicted results. Below is an result for the given address
+
 Given address is:  9309 Kittansett Dr NC 28262
 Your state is :  North Carolina
 Todays covid active index based on your location is -  4062.0
 Todays covid deaths index based on your location is -  50.0
 You are in  Red Zone
-The future 10 day active COVID predictions for ur location based on your state trend is: 
-2020-08-02    4062.0
-2020-08-03    3759.0
-2020-08-04    4343.0
-2020-08-05    5481.0
-2020-08-06    5882.0
-2020-08-07    5684.0
-2020-08-08    4628.0
-2020-08-09    3975.0
-2020-08-10    3767.0
-2020-08-11    4548.0
+The future 10 day active COVID predictions for ur location based on your state trend is:
+
+![alt text](/Images/Images/prediction.PNG "Images") 
 
 # Research Question: 
 
