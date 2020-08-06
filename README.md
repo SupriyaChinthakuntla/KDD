@@ -130,7 +130,7 @@ Then again, Mecklenburg county is the top county in North Carolina for covid rel
 
 ## Below is the graph plotted for North Carolina state prediction of Covid cases.
 
-![alt text](/Images/Images/linear.PNG "Images")  
+![alt text](/Images/Images/scatter_init.PNG "Images")  
 
 ## Plot of balanced dataset :
 
