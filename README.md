@@ -45,7 +45,11 @@ h)requests
 i)statsmodels
 
 # Research Question: 
-What is the ability to predict the count of future active cases and the number of reported cases in particular location, based on address provided in the USA?
+
+Although COVID-19 related data is available at the national, state, county or even city level, people are very interested in knowing what’s happening around their neighborhood, the grocery store, the pharmacy, or retail store they typically go to, and whether the place they are thinking of going to is in a viral hotspot or not.
+That broader query can be broken out into three related questions: 
+
+a)Given a street address can we find out the most recent (near real-time) death rate and confirmed cases in the surrounding area? 
 
 
 # Relevant Domain Information:
@@ -78,9 +82,15 @@ Performing a heat map to find the correlation between various columns here we fi
 
 ![alt text](/Images/Images/heatmap.PNG "Images") 
 
+Showing heat map as red zone if the predicted confirmed cases are less than 95 per in a day.
+
 ![alt text](/Images/Images/scatter.PNG "Images") 
 
+Showing heat map as orange zone if the predicted confirmed cases are less than 75 per in a day.
+
 ![alt text](/Images/Images/scatter1.PNG "Images") 
+
+Showing heat map as green zone if the predicted confirmed cases are less than 55 per in a day.
 
 ![alt text](/Images/Images/scatter2.PNG "Images") 
 
